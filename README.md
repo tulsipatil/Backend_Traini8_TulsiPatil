@@ -17,13 +17,13 @@ This project is an MVP for a registry of government-funded training centers. It 
 - Install Maven
 
 ### Configuration
-Update your terminal environment variables before running the application:
+Update your terminal environment variables before running the application(postgreSQL - default port used, update according to your DBMS):
 
 Windows:
 ```sh
 set DB_HOST=localhost
 set DB_PORT=5432
-set DB_NAME=yoga_db
+set DB_NAME=<YOUR_DB_NAME> 
 set DB_USER=myuser
 set DB_PASSWORD=mypassword
 ```
@@ -32,7 +32,7 @@ Linux/macOS:
 ```sh
 export DB_HOST=localhost
 export DB_PORT=5432
-export DB_NAME=yoga_db
+export DB_NAME=<YOUR_DB_NAME> 
 export DB_USER=myuser
 export DB_PASSWORD=mypassword
 ```
@@ -80,6 +80,13 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 ## Error Handling
 - This project uses a Global Exception Handler to manage validation errors and return structured responses.
 - Handles cases like invalid center code, email, and phone number.
+
+## Database Setup  
+Ensure the database is created before running the application. If it doesn’t exist, create it manually:  
+
+```sql  
+CREATE DATABASE <YOUR_DB_NAME>;  
+```  
 
 ## Postman API Screenshots
 
