@@ -74,14 +74,14 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 ## Postman API Screenshots
 
 ### Training Center Created Successfully
-![Center Created](static/center_created.png)
+![Center Created](src/main/resources/static/center_created.png)
 
 ### Exception on Invalid Center Code
-![Validation Exception](static/center_validation_error.png)
+![Validation Exception](src/main/resources/static/center_created.png)
 
 ### Get All Centers
-![Get All Centers](static/get_all_centers.png)
+![Get All Centers](src/main/resources/static/get_all_centers.png)
 
 ### Empty List of Centers - when no center exists
-![Empty List Centers](static/emptylist_centers.png)
+![Empty List Centers](src/main/resources/static/emptylist_centers.png)
 
